@@ -23,6 +23,7 @@ public class Clientaccount {
         Client cl2=new Client ("Richard Gere", "00002", 200000);
         Client cl3=new Client ("Thomas Monson", "00003", 300000);
         Client cl4=new Client ("Nefi Moroni", "00004", 5000000);
+        Client cl5=new Client ("George Clooney", "00001", 100000);
         
         Set <Client> BankClients=new HashSet<Client>();
         
@@ -30,10 +31,38 @@ public class Clientaccount {
         BankClients.add(cl2);
         BankClients.add(cl3);
         BankClients.add(cl4);
+         BankClients.add(cl5);
         
-        for (Client Client : BankClients) {
-            System.out.println(Client.getName()+ " " + Client.getNumberaccount()+ " " + Client.getBalance() );
+      /*for (Client Client : BankClients) {
+        /*System.out.println(Client.getName()+ " " + Client.getNumberaccount()+ " " + Client.getBalance() );
+            if(Client.getName().equals("Richar Gere")){
+            BankClients.remove(Client);
+            }
+        
+        }*/
+      
+      Iterator<Client> it=BankClients.iterator();
+      
+        while (it.hasNext()) {
+            String Client_name=it.next().getName();
+            
+            if(Client_name.equals("Richard Gere")){
+            
+                it.remove();
+            }
+            
         }
+        
+         for (Client Client : BankClients) {
+        System.out.println(Client.getName()+ " " + Client.getNumberaccount()+ " " + Client.getBalance() );
+        
+        }
+        /*Iterator<Client> it=BankClients.iterator();
+        
+        while (it.hasNext()) {
+            String client_name=it.next().getName();
+            System.out.println(client_name);
+        }*/
     }
     
 }
