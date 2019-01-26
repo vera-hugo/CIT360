@@ -44,7 +44,7 @@ public class Client {
         this.balance = balance;
     }
 
-    /*@Override
+    @Override
     public int hashCode() {
         int hash = 7;
         hash = 71 * hash + Objects.hashCode(this.numberaccount);
@@ -67,7 +67,7 @@ public class Client {
             return false;
         }
         return true;
-    }*/
+    }
     
     
     

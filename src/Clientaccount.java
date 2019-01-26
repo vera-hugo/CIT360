@@ -23,7 +23,7 @@ public class Clientaccount {
         Client cl2=new Client ("Richard Gere", "00002", 200000);
         Client cl3=new Client ("Thomas Monson", "00003", 300000);
         Client cl4=new Client ("Nefi Moroni", "00004", 5000000);
-        Client cl5=new Client ("George Clooney", "00001", 100000);
+        Client cl5=new Client ("George Clooney", "00005", 100000);
         
         Set <Client> BankClients=new HashSet<Client>();
         
@@ -40,6 +40,8 @@ public class Clientaccount {
             }
         
         }*/
+      
+      //System.out.println(Client.getName());
       
       Iterator<Client> it=BankClients.iterator();
       
