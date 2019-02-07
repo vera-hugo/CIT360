@@ -47,7 +47,7 @@ public class CustomerDAO {
         try {
             session = factory.openSession();
             session.getTransaction().begin();
-            String sql = "hibernateproject1.Customer";
+            String sql = "from hibernateproject1.Customer";
             List<Customer> cs = (List<Customer>)session.createQuery(sql).getResultList();
             session.getTransaction().commit();
             return cs;
@@ -69,7 +69,7 @@ public class CustomerDAO {
         try {
             session = factory.openSession();
             session.getTransaction().begin();
-            String sql = "from hibernate_projectmariadb.Customer where id=" + Integer.toString(customerId);
+            String sql = "from Customer where id=" + Integer.toString(customerId);
             Customer c = (Customer)session.createQuery(sql).getSingleResult();
             session.getTransaction().commit();
             return c;

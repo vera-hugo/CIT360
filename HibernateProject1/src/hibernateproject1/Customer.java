@@ -15,12 +15,12 @@ import javax.xml.bind.annotation.XmlRootElement;
  */
 @Entity
 @Table(name = "customer")
-/*@XmlRootElement
+@XmlRootElement
 @NamedQueries({
     @NamedQuery(name = "Customer.findAll", query = "SELECT c FROM Customer c"),
     @NamedQuery(name = "Customer.findByCustomerId", query = "SELECT c FROM Customer c WHERE c.customerId = :customerId"),
     @NamedQuery(name = "Customer.findByFirstname", query = "SELECT c FROM Customer c WHERE c.firstname = :firstname"),
-    @NamedQuery(name = "Customer.findByLastname", query = "SELECT c FROM Customer c WHERE c.lastname = :lastname")})*/
+    @NamedQuery(name = "Customer.findByLastname", query = "SELECT c FROM Customer c WHERE c.lastname = :lastname")})
 public class Customer implements Serializable {
     private static final long serialVersionUID = 1L;
     @Id

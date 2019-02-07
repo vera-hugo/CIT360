@@ -20,7 +20,7 @@ public class HibernateUtils {
     {
         try {
             ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder().
-                    configure("hibernate.cfg.xml").build();
+                    configure("hibernateproject1/hibernate.cfg.xml").build();
             
             Metadata metadata = new MetadataSources(serviceRegistry).
                     getMetadataBuilder().build();
@@ -28,6 +28,7 @@ public class HibernateUtils {
             return metadata.getSessionFactoryBuilder().build();
         } catch (Throwable ex) {
             System.err.println("Initial SessionFactory creeation failed." + ex);
+            
             throw new ExceptionInInitializerError(ex);
         }   
     }

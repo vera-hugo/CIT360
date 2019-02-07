@@ -13,6 +13,6 @@
     <property name="hibernate.cache.provider_class">org.hibernate.cache.internal.NoCacheProvider</property>
     
     <property name="hibernate.show_sql">true</property>
-    <mapping class="hibernateproject1.Customer" package="hibernateproject1"/>
+    <mapping class="hibernateproject1.Customer"/>
   </session-factory>
 </hibernate-configuration>
