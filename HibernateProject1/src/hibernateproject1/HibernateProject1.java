@@ -21,7 +21,7 @@ public class HibernateProject1 {
         
         CustomerDAO t = CustomerDAO.getInstance();
 
-        List<Customer> c = t.getCustomers();
+        List<Customer> c = t.getCustomer();
         for (Customer i : c) {
             System.out.println(i);
         }

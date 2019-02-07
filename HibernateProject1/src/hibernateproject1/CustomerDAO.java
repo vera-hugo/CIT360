@@ -42,12 +42,12 @@ public class CustomerDAO {
      *  Uses the OpenSession construct rather than the
      *  getCurrentSession method so that I control the
      *  session.  Need to close the session myself in finally.*/
-    public List<Customer> getCustomers() {
+    public List<Customer> getCustomer() {
 
         try {
             session = factory.openSession();
             session.getTransaction().begin();
-            String sql = "from hibernate_projectmariadb.Customer";
+            String sql = "hibernateproject1.Customer";
             List<Customer> cs = (List<Customer>)session.createQuery(sql).getResultList();
             session.getTransaction().commit();
             return cs;
