@@ -6,10 +6,9 @@
 package JSON2;
 
 import java.io.FileReader;
-import org.json.JSONObject;
-import org.json.JSONTokener;
-
-
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
 
 /**
  *
@@ -17,29 +16,39 @@ import org.json.JSONTokener;
  */
 public class JSONReader {
     
+   
+    
     public static void main(String[] args) throws Exception {
         
+        //String test = "{"fname":"Hugo David","lname":"Vera Moreira","id":1308145000,"age":37}";
         // Parsing from my student.json file
-        //Object json = new JSONTokener(response).nextValue();
-         Object read = new JSONReader().parse(new FileReader("C:\\Users\\David Vera\\Documents\\NetBeansProjects\\CIT360\\WEEK2\\src\\JSON2\\student.json"));
+        JSONParser read = new JSONParser();
+                //.parse(new FileReader("C:\\Users\\David Vera\\Documents\\NetBeansProjects\\CIT360\\WEEK2\\src\\JSON2\\student.json"));
         
         // Typecasting 
-        JSONObject obj = (JSONObject) read;
-        
+        JSONObject obj = (JSONObject) read.parse(new FileReader("C:\\Users\\David Vera\\Documents\\NetBeansProjects\\CIT360\\WEEK2\\src\\JSON2\\student.json"));
+                       
         // Getting data from JSON file
-        String firstname = (String) obj.get("fname");
-        String lastname = (String) obj.get("lname");
-        String age = (String) obj.get("age");
-        String id = (String) obj.get("id");
+        String fname = (String) obj.get("fname");
+        String lname = (String) obj.get("lname");
+        long id = (long) obj.get("id");
+        long age = (long) obj.get("age");
+        String state = (String) obj.get("state");
+        String country = (String) obj.get("country");
+        long phonenumber = (long) obj.get("phonenumber");
         
-        System.out.println(firstname); 
-        System.out.println(lastname); 
+        
+        System.out.println(fname); 
+        System.out.println(lname); 
+         System.out.println(id);
+        System.out.println(age);
+        System.out.println(state);
+        System.out.println(country);
+        System.out.println(phonenumber);
+       
     }
 
-    private Object parse(FileReader fileReader) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    
+          
     
 }
 

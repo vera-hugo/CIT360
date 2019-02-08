@@ -7,7 +7,9 @@ package JSON2;
 
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
-import org.json.JSONObject;
+import org.json.simple.JSONObject;
+
+
 
 /**
  *
@@ -24,6 +26,9 @@ public class JSONWriter {
         obj.put("lname", "Vera Moreira");
         obj.put("age", 37);
         obj.put("id", 1308145000);
+        obj.put("state", "Manabí");
+        obj.put("country", "Ecuador");
+        obj.put("phonenumber", 981288188);
         
         /*obj1.put("fname", "Nickole");
         obj1.put("lname", "Vera");

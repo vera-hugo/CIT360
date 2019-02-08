@@ -6,7 +6,8 @@
 package JSONTest;
 
 import java.util.Scanner;
-import org.json.JSONObject;
+import org.json.simple.JSONObject;
+
 
 /**
  *
