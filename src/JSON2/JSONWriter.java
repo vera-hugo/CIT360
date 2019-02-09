@@ -22,8 +22,8 @@ public class JSONWriter {
         JSONObject obj = new JSONObject();
         //JSONObject obj1 = new JSONObject();
         // Adding data to my newly formed JSON Object
-        obj.put("fname", "Hugo David");
-        obj.put("lname", "Vera Moreira");
+        obj.put("firstname", "Hugo David");
+        obj.put("lastname", "Vera Moreira");
         obj.put("age", 37);
         obj.put("id", 1308145000);
         obj.put("state", "Manabí");

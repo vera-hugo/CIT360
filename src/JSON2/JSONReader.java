@@ -29,8 +29,8 @@ public class JSONReader {
         JSONObject obj = (JSONObject) read.parse(new FileReader("C:\\Users\\David Vera\\Documents\\NetBeansProjects\\CIT360\\WEEK2\\src\\JSON2\\student.json"));
                        
         // Getting data from JSON file
-        String fname = (String) obj.get("fname");
-        String lname = (String) obj.get("lname");
+        String firstname = (String) obj.get("firstname");
+        String lastname = (String) obj.get("lastname");
         long id = (long) obj.get("id");
         long age = (long) obj.get("age");
         String state = (String) obj.get("state");
@@ -38,9 +38,9 @@ public class JSONReader {
         long phonenumber = (long) obj.get("phonenumber");
         
         
-        System.out.println(fname); 
-        System.out.println(lname); 
-         System.out.println(id);
+        System.out.println(firstname); 
+        System.out.println(lastname); 
+        System.out.println(id);
         System.out.println(age);
         System.out.println(state);
         System.out.println(country);
