@@ -30,7 +30,7 @@ public class login extends HttpServlet {
       String _password = request.getParameter("password");
       if ( _username != null && _password !=null){
           if(_username.equals("Hugo Vera") && _password.equals("12345")){
-                response.sendRedirect("Welcome.jsp");
+                response.sendRedirect("Welcome.html");
                 }else {
                     out.println("Invalid username or password");
                     }
