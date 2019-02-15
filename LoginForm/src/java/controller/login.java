@@ -29,6 +29,8 @@ public class login extends HttpServlet {
       String _username = request.getParameter("username");
       String _password = request.getParameter("password");
       if ( _username != null && _password !=null){
+          
+          
           if(_username.equals("Hugo Vera") && _password.equals("12345")){
                 response.sendRedirect("Welcome.html");
                 }else {
