@@ -53,7 +53,8 @@ public class HttpConnection {
 		}
 
 	}
-
+        
+        
 	// HTTP GET request
 		private void sendGet() throws Exception {
 
