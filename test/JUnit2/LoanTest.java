@@ -5,7 +5,7 @@
  */
 package JUnit2;
 
-//import JUnitCode.Loan;
+
 import org.junit.*;
 import static org.junit.Assert.*;
 
