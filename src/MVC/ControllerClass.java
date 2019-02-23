@@ -54,7 +54,7 @@ public class ControllerClass {
 				
 				System.out.println(ex);
 				
-				theView.displayErrorMessage("You Need to Enter 2 Values");
+				theView.displayErrorMessage("You Need to Enter 2 Numeric Values");
 				
 			}
 			
